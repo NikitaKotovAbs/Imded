@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="Якалендарь.UserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Якалендарь"
+             mc:Ignorable="d" 
+             d:DesignHeight="60" d:DesignWidth="50">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="Num" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15" ></TextBlock>
+        <Button x:Name="Ico"  BorderBrush="White" Grid.Row="1" Width="50" Height="30" Click="Button_Click">
+            <Button.Background>
+                <ImageBrush x:Name="Ic" ImageSource="/op.jpg" Stretch="Fill" TileMode="None" />
+            </Button.Background>
+
+        </Button>
+    </Grid>
+</UserControl>

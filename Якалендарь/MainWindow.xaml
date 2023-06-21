@@ -1,0 +1,23 @@
+﻿<Window x:Class="Якалендарь.MainWindow"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Якалендарь"
+        mc:Ignorable="d"
+        Title="Календарик" Height="500" Width="300"  Background="#FF483825" Icon="C:\\Users\\kudaj\\source\\repos\\CAlendar\\Якалендарь\\free-icon-calendar-297443.png" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="56*"/>
+            <ColumnDefinition Width="135*"/>
+            <ColumnDefinition Width="71*"/>
+            <ColumnDefinition Width="56*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35*"/>
+            <RowDefinition Height="349*"/>
+        </Grid.RowDefinitions>
+        <Frame x:Name="Pa" Grid.ColumnSpan="4" Grid.RowSpan="2" NavigationUIVisibility="Hidden"></Frame>
+    </Grid>
+</Window>

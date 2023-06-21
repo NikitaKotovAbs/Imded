@@ -1,0 +1,33 @@
+﻿<Page x:Class="Якалендарь.INFO"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Якалендарь"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="300"
+      Title="INFO">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="23*"/>
+            <RowDefinition Height="156*"/>
+            <RowDefinition Height="21*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="Exit_" Background="#FFB73A3A" Margin="1,10,0,4" BorderBrush="#FFB73A3A" HorizontalAlignment="Left" Width="48" Click="Exit__Click">
+            <materialDesign:PackIcon Kind="ArrowBack" />
+        </Button>
+        <TextBlock x:Name="Data__" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+        </TextBlock>
+        <ListBox x:Name="OLO" Grid.Row="1" Grid.ColumnSpan="2" Margin="1">
+
+        </ListBox>
+        <Button x:Name="Save" Content="Сохранить и выйти" Grid.Row="2" Grid.ColumnSpan="2" Background="#FFB73A3A" BorderBrush="#FFB73A3A" Click="Save_Click">
+        </Button>
+    </Grid>
+</Page>
